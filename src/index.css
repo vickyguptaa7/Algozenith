@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #21598e;
+  --secondary-color: #ff2d75;
+  --primary-text-color: #21598e;
+  --secondary-text-color: #6a7280;
+  --tertiary-text-color: #141f1d;
+  --background-color: #e3e6ea;
+  --main-color: #fff;
+  --shadow-color: #d1d5db;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+}
+
+html,
+body {
+  -webkit-tap-highlight-color: transparent;
+}
