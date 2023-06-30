@@ -28,6 +28,7 @@ export default {
       },
       backgroundImage: {
         'header-bg': 'url(./src/assets/header-bg.png)',
+        'net-bg': 'url(./src/assets/net.png)',
       }
     },
   },
