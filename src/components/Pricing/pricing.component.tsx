@@ -1,6 +1,6 @@
 import { FaArrowRight } from "react-icons/fa";
 import { BENEFITS, HIGHLIGHTS } from "../../Contant/Details";
-import mesh_image from "../../assets/algo-2.png";
+import algozenith_logo from "../../assets/algo-2.png";
 import Wrapper from "../Wrapper";
 import "./pricing.styles.css";
 
@@ -53,7 +53,7 @@ const Pricing = () => {
               </h1>
             </div>
             <div className="flex items-end justify-end ">
-              <img src={mesh_image} className="w-52 h-52 aspect-square" alt="" />
+              <img src={algozenith_logo} className="w-52 h-52 aspect-square" alt="" />
             </div>
           </div>
           <div className="flex flex-col gap-8 p-8 border-b-[1px] border-l-[1px] border-r-[1px] border-white bg-gradient-to-b from-[#05445E] to-[#002F42] rounded-b-xl ">
