@@ -1,13 +1,21 @@
 import { FaArrowRight } from "react-icons/fa";
 import { OUTCOMES } from "../../Contant/Details";
-import topic_image from "../../assets/algo-1.png";
+
 import Wrapper from "../Wrapper";
+
+import topic_image from "../../assets/algo-1.png";
+import header_bg from "../../assets/header-bg.png";
 
 import "./header.styles.css";
 
 const Header = () => {
   return (
-    <header className="overflow-hidden bg-header-bg">
+    <header
+      className="overflow-hidden"
+      style={{
+        backgroundImage: `url(${header_bg})`,
+      }}
+    >
       <Wrapper className="flex flex-col items-center justify-between h-full mt-24 lg:my-16 lg:flex-row">
         {/* Information */}
         <div className="flex flex-col items-center justify-center basis-1/2 lg:items-start">

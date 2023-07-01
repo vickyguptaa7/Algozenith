@@ -1,7 +1,11 @@
 import { FaArrowRight } from "react-icons/fa";
 import { BENEFITS, HIGHLIGHTS } from "../../Contant/Details";
-import algozenith_logo from "../../assets/algo-2.png";
+
 import Wrapper from "../Wrapper";
+
+import algozenith_logo from "../../assets/algo-2.png";
+import mesh_image from "../../assets/mesh.png";
+
 import "./pricing.styles.css";
 
 const Pricing = () => {
@@ -40,9 +44,7 @@ const Pricing = () => {
 
         {/* Pricing Details Card */}
         <div className="flex flex-col overflow-hidden bg-white shadow-lg rounded-xl shadow-gray-400 lg:w-[28rem]">
-          <div
-            className="flex justify-between w-full h-full overflow-hidden bg-white card-border-grad"
-          >
+          <div className="flex justify-between w-full h-full overflow-hidden bg-white card-border-grad">
             <div className="flex flex-col m-6">
               <h6 className="text-md">Premium Victory Batch</h6>
               <h1 className="text-5xl font-bold font-rubik text-[#818181] line-through mt-4 ">
@@ -53,17 +55,24 @@ const Pricing = () => {
               </h1>
             </div>
             <div className="flex items-end justify-end ">
-              <img src={algozenith_logo} className="w-52 h-52 aspect-square" alt="" />
+              <img
+                src={algozenith_logo}
+                className="w-52 h-52 aspect-square"
+                alt=""
+              />
             </div>
           </div>
           <div className="flex flex-col gap-8 p-8 border-b-[1px] border-l-[1px] border-r-[1px] border-white bg-gradient-to-b from-[#05445E] to-[#002F42] rounded-b-xl ">
-            <div className="flex flex-col gap-4 text-white bg-net-bg">
+            <div
+              className="flex flex-col gap-4 text-white"
+              style={{
+                backgroundImage: `url(${mesh_image})`,
+              }}
+            >
               {BENEFITS.map((benefit) => {
                 return (
                   <div className="flex items-center gap-4" key={benefit.id}>
-                    <div
-                      className="w-16 h-16 rounded-md aspect-square border-grad"
-                    ></div>
+                    <div className="w-16 h-16 rounded-md aspect-square border-grad"></div>
                     <h3 className="">{benefit.title}</h3>
                   </div>
                 );

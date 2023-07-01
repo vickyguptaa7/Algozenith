@@ -26,10 +26,6 @@ export default {
       fontFamily: {
         'rubik': ['Rubik', 'sans-serif'],
       },
-      backgroundImage: {
-        'header-bg': 'url(./src/assets/header-bg.png)',
-        'net-bg': 'url(./src/assets/net.png)',
-      }
     },
   },
   plugins: [],
