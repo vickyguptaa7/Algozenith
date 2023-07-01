@@ -1,7 +1,9 @@
 import { FaArrowRight } from "react-icons/fa";
-import { OUTCOMES } from "../Contant/Details";
-import img1 from "../assets/algo-1.png";
-import Wrapper from "./Wrapper";
+import { OUTCOMES } from "../../Contant/Details";
+import topic_image from "../../assets/algo-1.png";
+import Wrapper from "../Wrapper";
+
+import "./header.styles.css";
 
 const Header = () => {
   return (
@@ -16,7 +18,7 @@ const Header = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
             nisi quas consequatur illum laudantium autem.
           </p>
-          <div className="flex flex-col-reverse gap-8 mt-6 lg:flex-col ">
+          <div className="flex flex-col-reverse w-full gap-8 mt-6 lg:flex-col ">
             <div className="flex flex-col justify-center gap-5 sm:gap-8 sm:items-center sm:flex-row lg:justify-normal">
               <button className="bg-white font-semibold text-[color:var(--primary-text-color)] px-8 py-2.5 rounded-md mx-[1.5px] my-[1px] flex items-center gap-2 justify-center hover:scale-110 active:scale-95 duration-1000 hover:duration-300 active:duration-300">
                 Join Now <FaArrowRight />
@@ -27,21 +29,14 @@ const Header = () => {
                 </div>
               </button>
             </div>
-            <div className="grid grid-cols-1 gap-5 xs:grid-cols-2 sm:gap-8">
+            <div className="grid grid-cols-1 gap-5 xs:grid-cols-2 sm:gap-8 place-items-center">
               {OUTCOMES.map((outcome) => {
                 return (
                   <div
                     className="flex items-center gap-3 text-white"
                     key={outcome.id}
                   >
-                    <div
-                      className="w-12 h-12 rounded-md aspect-square"
-                      style={{
-                        border: "1px solid",
-                        borderRadius: 8,
-                        borderImage: "linear-gradient(#CFF1FF,#2D5666) 1",
-                      }}
-                    ></div>
+                    <div className="w-12 h-12 rounded-md aspect-square border-grad"></div>
                     <h3>{outcome.title}</h3>
                   </div>
                 );
@@ -53,7 +48,7 @@ const Header = () => {
         {/* Algo-Zenith Image */}
         <div className=" sm:w-[450px] md:w-[500px] lg:mt-12 lg:basis-1/2">
           <img
-            src={img1}
+            src={topic_image}
             className="object-bottom sm:scale-125 lg:scale-110"
             alt=""
           />
